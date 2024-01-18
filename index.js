@@ -12,7 +12,7 @@ const app = express()
 app.use(express.json())
 app.use(cors({origin: '*'}))
 
-const PORT = process.env.PORT || 8080; // Добавленная строка
+const PORT = process.env.PORT  // Добавленная строка
 
 
 app.post('/setButtonName', async (req, res) => {
